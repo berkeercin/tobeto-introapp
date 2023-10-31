@@ -1,3 +1,14 @@
+# 31.10.2023 tarihli 3. Workshop çalışması.
+
+Konusu:
+Derste geliştirdiğimiz tasarımı geliştirerek alt alta textlerde
+
+Resminiz
+Ad Soyad
+Tobeto Bölümünüz
+Tarih
+şeklinde bir mobil ekran tasarlayınız.
+
 # introapp
 
 A new Flutter project.
