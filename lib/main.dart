@@ -67,7 +67,6 @@ class _QuizScreenState extends State<QuizScreen> {
   void changeQuestion() {
     setState(() {
       if (questionNumber >= questions.length - 1) {
-        print(questionNumber);
         questionNumber = 0;
       } else {
         questionNumber++;
