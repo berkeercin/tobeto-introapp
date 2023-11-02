@@ -1,42 +1,28 @@
 import 'package:flutter/material.dart';
-// flutter'i initalize eden runApp
 
-// Widget => en küçükten en büyüğe giden şablonlar
-
-// constant
 void main() {
-  runApp(
-    const MaterialApp(
-      home: Scaffold(
-        backgroundColor: Color.fromARGB(255, 57, 7, 96), // Configuration Widget
-        body: Center(
-            child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Image(image: AssetImage("./assets/images/berkeercin.jpg")),
-            Text(
-              "Berke Erçin",
-              style: TextStyle(fontSize: 38, color: Colors.white),
-            ),
-            Text(
-              "Tobeto - Mobil Geliştirici - 1B",
-              style: TextStyle(fontSize: 24, color: Colors.white),
-            ),
-            Text(
-              "31.10.2023",
-              style: TextStyle(fontSize: 14, color: Colors.white),
-            )
-          ],
-        )),
-      ),
-    ),
-  );
+  runApp(const MaterialApp(home: HomeScreen()));
 }
 
-// intelisens => ctrl + space
-// SHIFT + ALT + F
-// sağ tık -> format document
+class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key}); //1. gereksinim
 
-// Stateless => UI
-// Stateful => Dynamic UI
-
+  //2. gereksinim
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.deepPurpleAccent,
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset("assets/images/quiz-logo.png"),
+            // Image.network(
+            //     "https://miro.medium.com/v2/resize:fit:720/format:webp/1*FBRsnCP9wE84UVW1Kkv5Yw.jpeg"),
+            Text("Quiz App"),
+            Text("Deneme"),
+          ],
+        ),
+      ),
+    );
+  }
+}
