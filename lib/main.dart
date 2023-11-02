@@ -57,24 +57,42 @@ class QuizScreen extends StatefulWidget {
 
 class _QuizScreenState extends State<QuizScreen> {
   String text = "Aşağıdakilerden hangisi bir widget türüdür?";
+  int questionNumber = 0;
   void changeText() {
     setState(() {
       text = "Yeni değer";
     });
   }
 
+  void changeQuestion() {
+    setState(() {
+      if (questionNumber >= questions.length - 1) {
+        print(questionNumber);
+        questionNumber = 0;
+      } else {
+        questionNumber++;
+      }
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.deepPurpleAccent,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(text),
-            ...questions[0].answers.map((answer) {
+            Text(
+              questions[questionNumber].question,
+              style: TextStyle(color: Colors.white, fontSize: 32),
+            ),
+            ...questions[questionNumber].answers.map((answer) {
               return ElevatedButton(
+                  style:
+                      ElevatedButton.styleFrom(backgroundColor: Colors.black),
                   onPressed: () {
-                    changeText();
+                    changeQuestion();
                   },
                   child: Text(answer));
             }),

@@ -1,3 +1,7 @@
+# 2.11.2023 tarihli Workshop ödevi
+
+Uygulamamızın son halinde "questions.dart" dosyasından gelen verilerin tek tek ekranda soru olarak kendi cevaplarıyla gösterilmesi ve bir cevap seçildikçe ekrana yeni sorunun gelmesi sistemini kodlayınız.
+
 # introapp
 
 A new Flutter project.
