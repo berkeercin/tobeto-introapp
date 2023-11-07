@@ -1,6 +1,9 @@
-# 2.11.2023 tarihli Workshop ödevi
+# 7.11.2023 tarihli Workshop ödevi
 
-Uygulamamızın son halinde "questions.dart" dosyasından gelen verilerin tek tek ekranda soru olarak kendi cevaplarıyla gösterilmesi ve bir cevap seçildikçe ekrana yeni sorunun gelmesi sistemini kodlayınız.
+en az 10 adet flutter ile alaklı soru eklenecek result_screen.dart dosyası oluşturulacak.
+Soruları bitirdiğinde bu ekrana yönlendirilecek
+EKSTRA: Cevaplar hafızada tutulacak ve kullanıcıya kendi cevapları listelenecek
+EKSTRA 2: Kaç adet doğru kaç adet yanlış cevap verdi result sayfasında gösterilecek.
 
 # introapp
 
